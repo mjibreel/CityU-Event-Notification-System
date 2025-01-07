@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "522216344352",
+    "project_id": "flutter-university-app-46c18",
+    "storage_bucket": "flutter-university-app-46c18.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:522216344352:android:fdb54359be4ecd67ed6545",
+        "android_client_info": {
+          "package_name": "com.example.city_u"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7SUQCtKkjtDxOby2DAXehDtbSshvQXjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

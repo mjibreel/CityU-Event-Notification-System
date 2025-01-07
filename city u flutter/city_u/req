@@ -1,0 +1,50 @@
+flutter clean
+flutter pub get
+flutter run
+
+cd city_u
+
+pod repo update
+pod install
+
+
+title (String): The title of the article.
+content (String): The main content of the article.
+date (Timestamp): The publication date and time.
+imageUrl (String): The URL of the image if you've uploaded it to Firebase Storage
+
+
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
+source ~/.zshrc
+cd android
+./gradlew clean
+java -version
+
+
+flutter pub get
+
+flutter run --verbose
+
+cd android
+./gradlew assembleDebug --stacktrace
+
+
+Clean the Gradle Cache and Rebuild
+cd android
+./gradlew clean
+cd ..
+flutter clean
+flutter pub get
+
+open .zshenv
+nano .zshenv
+export PATH=$HOME/development/flutter/bin:$PATH
+flutter doctor --android-licenses
+
+
+https://www.youtube.com/watch?v=a1YxfEGhFmQ&ab_channel=AJFlutterTutorials
+
+Pubspec Assist
+
+

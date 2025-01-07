@@ -1,0 +1,58 @@
+plugins {
+    id "com.android.application"
+    // START: FlutterFire Configuration
+    id 'com.google.gms.google-services'
+    // END: FlutterFire Configuration
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+android {
+    namespace = "com.example.city_u"
+    compileSdk = 34 // Set a specific version instead of `flutter.compileSdkVersion`
+    ndkVersion = "21.1.6352462" // Set NDK version, adjust as needed
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8" // Use string for JVM target version
+    }
+
+    defaultConfig {
+        applicationId = "com.example.city_u"
+        minSdk = 21 // Set a specific version instead of `flutter.minSdkVersion`
+        targetSdk = 33 // Set a specific version instead of `flutter.targetSdkVersion`
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig = signingConfigs.debug
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.10'
+}
+
+apply plugin: 'com.google.gms.google-services'
